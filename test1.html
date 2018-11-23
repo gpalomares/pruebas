@@ -1,0 +1,24 @@
+function buscar(pueblo){
+    var almeria = ["Mojácar", "Vera", "Berja"];    // 0
+    var cadiz = ["Jerez", "Algeciras", "Rota"];    // 1
+    var cordoba = ["Lucena", "Cabra", "Montilla"];    // 2
+    var granada = ["Torrenueva", "Motril", "Guadix"];    // 3
+    var huelva = ["Aracena", "Moguer", "Ayamonte"];    // 4
+    var jaen = ["Linares", "Úbeda", "Cazorla"];    // 5
+    var malaga = ["Fuengirola", "Ronda", "Marbella"];    // 6
+    var sevilla = ["Écija", "Utrera", "Carmona"];    // 7
+    var provincias = [almeria, cadiz, cordoba, granada, huelva, jaen, malaga, sevilla];
+    var nombre_provincias = ["almeria", "cadiz", "cordoba", "granada", "huelva", "jaen", "malaga", "sevilla"];
+
+    var encontrado = false;
+
+    busqueda:
+    for(i=0, finI=provincias.length; i<finI; i++)
+        for(j=0, finJ=provincias[i].length; j<finJ; j++)
+            if(pueblo == provincias[i][j]){
+                encontrado = true;
+                break busqueda;
+            }
+}
+
+
